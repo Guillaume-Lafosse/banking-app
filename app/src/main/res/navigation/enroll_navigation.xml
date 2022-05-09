@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/enroll_navigation"
+    app:startDestination="@id/enrollFragment">
+
+    <fragment
+        android:id="@+id/enrollFragment"
+        android:name="com.guillaume.bankingapp.enrollment.EnrollmentFormFragment"
+        android:label="EnrollFragment">
+        <action
+            android:id="@+id/action_enrollFragment_to_enrollBankVerificationFragment"
+            app:destination="@id/enrollBankVerificationFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/successfulEnrollment"
+        android:name="com.guillaume.bankingapp.enrollment.SuccessfulEnrollmentFragment"
+        android:label="SuccessfulEnrollment">
+        <argument
+            android:name="enrolledPan"
+            app:argType="string" />
+        <argument
+            android:name="nickname"
+            app:argType="string"
+            app:nullable="true" />
+    </fragment>
+    <fragment
+        android:id="@+id/enrollBankVerificationFragment"
+        android:name="com.guillaume.bankingapp.BankVerificationFragment"
+        android:label="BankVerificationFragment">
+        <argument
+            android:name="context"
+            android:defaultValue="enrollment"
+            app:argType="string" />
+        <argument
+            android:name="pan"
+            app:argType="string" />
+        <action
+            android:id="@+id/action_enrollBankVerificationFragment_to_mainActivity2"
+            app:destination="@id/mainActivity2" />
+        <action
+            android:id="@+id/action_enrollBankVerificationFragment_to_successfulEnrollment"
+            app:destination="@id/successfulEnrollment" />
+        <argument android:name="nickname"
+            app:argType="string"
+            app:nullable="true" />
+    </fragment>
+    <activity
+        android:id="@+id/mainActivity2"
+        android:name="com.guillaume.bankingapp.home.MainActivity"
+        android:label="MainActivity" />
+</navigation>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="../../../../layout/custom_preview.xml" value="0.20989583333333334" />
+        <entry key="app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.1945" />
+        <entry key="app/src/main/res/drawable/card_container_border.xml" value="0.293" />
+        <entry key="app/src/main/res/drawable/circle_progress_bar.xml" value="0.1945" />
+        <entry key="app/src/main/res/drawable/circle_shape.xml" value="0.1945" />
+        <entry key="app/src/main/res/drawable/ic_launcher_background.xml" value="0.1945" />
+        <entry key="app/src/main/res/layout/activity_bank_verification.xml" value="0.15305686190679776" />
+        <entry key="app/src/main/res/layout/activity_card_details.xml" value="0.20489573889392565" />
+        <entry key="app/src/main/res/layout/activity_enroll_card.xml" value="0.20489573889392565" />
+        <entry key="app/src/main/res/layout/activity_login.xml" value="0.29243266353142366" />
+        <entry key="app/src/main/res/layout/activity_main.xml" value="0.19170984455958548" />
+        <entry key="app/src/main/res/layout/activity_payment.xml" value="0.24524025385312784" />
+        <entry key="app/src/main/res/layout/activity_pin_verification.xml" value="0.24524025385312784" />
+        <entry key="app/src/main/res/layout/card_row_item.xml" value="0.15305686190679776" />
+        <entry key="app/src/main/res/layout/fragment_bank_verification.xml" value="0.15305686190679776" />
+        <entry key="app/src/main/res/layout/fragment_card_list.xml" value="0.22030825022665457" />
+        <entry key="app/src/main/res/layout/fragment_enroll.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/fragment_failed_transaction.xml" value="0.22030825022665457" />
+        <entry key="app/src/main/res/layout/fragment_new_card.xml" value="0.29243266353142366" />
+        <entry key="app/src/main/res/layout/fragment_pin_verification.xml" value="0.24524025385312784" />
+        <entry key="app/src/main/res/layout/fragment_success_transaction.xml" value="0.24524025385312784" />
+        <entry key="app/src/main/res/layout/fragment_successful_enrollment.xml" value="0.16075245831551946" />
+        <entry key="app/src/main/res/layout/fragment_successful_transaction.xml" value="0.1188542112013681" />
+        <entry key="app/src/main/res/menu/card_details_menu.xml" value="0.1188542112013681" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="1.8" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

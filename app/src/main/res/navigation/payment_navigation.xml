@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/payment_navigation"
+    app:startDestination="@id/pinVerificationFragment">
+
+    <fragment
+        android:id="@+id/pinVerificationFragment"
+        android:name="com.guillaume.bankingapp.payment.PinVerificationFragment"
+        android:label="PinVerificationFragment" >
+        <action
+            android:id="@+id/action_pinVerificationFragment_to_paymentBankVerificationFragment"
+            app:destination="@id/paymentBankVerificationFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/successTransactionFragment"
+        android:name="com.guillaume.bankingapp.payment.SuccessTransactionFragment"
+        android:label="SuccessTransactionFragment" >
+        <action
+            android:id="@+id/action_successTransactionFragment_to_mainActivity"
+            app:destination="@id/mainActivity" />
+    </fragment>
+    <fragment
+        android:id="@+id/paymentBankVerificationFragment"
+        android:name="com.guillaume.bankingapp.BankVerificationFragment"
+        android:label="BankVerificationFragment" >
+        <action
+            android:id="@+id/action_paymentBankVerificationFragment_to_successTransactionFragment"
+            app:destination="@id/successTransactionFragment" />
+        <argument
+            android:name="context"
+            app:argType="string"
+            android:defaultValue="payment" />
+        <action
+            android:id="@+id/action_paymentBankVerificationFragment_to_mainActivity"
+            app:destination="@id/mainActivity" />
+        <argument
+            android:name="pin"
+            app:argType="string" />
+        <action
+            android:id="@+id/action_paymentBankVerificationFragment_to_failedTransactionFragment"
+            app:destination="@id/failedTransactionFragment" />
+    </fragment>
+    <activity
+        android:id="@+id/mainActivity"
+        android:name="com.guillaume.bankingapp.home.MainActivity"
+        android:label="MainActivity" />
+    <fragment
+        android:id="@+id/failedTransactionFragment"
+        android:name="com.guillaume.bankingapp.payment.FailedTransactionFragment"
+        android:label="FailedTransactionFragment" >
+        <action
+            android:id="@+id/action_failedTransactionFragment_to_mainActivity"
+            app:destination="@id/mainActivity" />
+    </fragment>
+</navigation>

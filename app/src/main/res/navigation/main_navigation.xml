@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/main_navigation"
+    app:startDestination="@id/newCardFragment">
+
+    <activity
+        android:id="@+id/enrollCardActivity"
+        android:name="com.guillaume.bankingapp.enrollment.CardEnrollmentActivity"
+        android:label="EnrollCardActivity" />
+    <fragment
+        android:id="@+id/newCardFragment"
+        android:name="com.guillaume.bankingapp.home.CardListFragment"
+        android:label="NewCardFragment" >
+        <action
+            android:id="@+id/action_newCardFragment_to_enrollCardActivity"
+            app:destination="@id/enrollCardActivity" />
+        <action
+            android:id="@+id/action_newCardFragment_to_cardDetailsActivity"
+            app:destination="@id/cardDetailsActivity" />
+    </fragment>
+    <activity
+        android:id="@+id/cardDetailsActivity"
+        android:name="com.guillaume.bankingapp.card_details.CardDetailsActivity"
+        android:label="CardDetailsActivity" />
+</navigation>

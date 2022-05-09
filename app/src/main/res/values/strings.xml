@@ -1,0 +1,33 @@
+<resources>
+    <string name="app_name">BankingApp</string>
+    <string name="title">Banking App</string>
+    <string name="login_username_hint">Username</string>
+    <string name="login_password_hint">Password</string>
+    <string name="login_btn">Login</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="add_a_new_card">Add a new card</string>
+    <string name="add_first_card_description">You have no configured card. \n Please add a new one to enjoy contactless payment.</string>
+    <string name="enroll_mm_yy_hint">MM / YY*</string>
+    <string name="enroll_cvc_hint">CVC*</string>
+    <string name="enroll_card_number_hint">Card number*</string>
+    <string name="enroll_save">Save</string>
+    <string name="successful_enrollment_desc">Congratulations!\n Your card is now ready to use for contactless payments.</string>
+    <string name="successful_enrollment_button">Got it !</string>
+    <string name="pin_verification_input_text">Enter your PIN to validate transaction</string>
+    <string name="success_logo_transaction">Success logo transaction</string>
+    <string name="failed_logo_transaction">Failed logo transaction</string>
+    <string name="contacting_your_bank">Contacting your bank...</string>
+    <string name="name_hint">Name*</string>
+    <string name="nickname_hint">Nickname</string>
+    <string name="address_hint">Street address*</string>
+    <string name="postal_code_hint">Postal code*</string>
+    <string name="city_hint">City*</string>
+    <string name="phone_number_hint">Phone number*</string>
+    <string name="remove_card_menu">Remove card</string>
+    <string name="transaction_failed">Transaction failed</string>
+    <string name="transaction_completed">Transaction completed !</string>
+    <string name="desensitize_pan">************</string>
+    <string name="virtual_account_number">Virtual account number: ************</string>
+    <string name="is_default_payment_method">Is default payment method:</string>
+    <string name="list_of_your_cards">List of your cards :</string>
+</resources>

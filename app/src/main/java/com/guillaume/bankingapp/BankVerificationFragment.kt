@@ -49,7 +49,7 @@ class BankVerificationFragment : Fragment() {
     private fun enroll() {
         val panArg = arguments?.getString("pan")!!
         val nicknameArg = arguments?.getString("nickname")!!
-        val panObject = JSONObject("{pan: '${panArg}', nickname: '${nicknameArg}'}")
+        val panObject = JSONObject("{pan: '${panArg}', nickname: \"${nicknameArg}\"}")
         val wrappedJSON =
             RequestBody.create(MediaType.parse("application/json"), panObject.toString())
         BackendApi.retrofitService.enroll(wrappedJSON)

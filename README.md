@@ -14,3 +14,7 @@ Just remove one direction in one navigation graph and recreate it. Android Studi
 If you want to test this app with successful payments, notice than the correct PIN is 753159.
 
 Last thing: this app use free-plan heroku backend, so first time you run it the loading of cards could be longer.
+
+### NOTICE
+
+When your payment is successful, transaction is added in the card page.

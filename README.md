@@ -12,3 +12,5 @@ It might be possible that functions which use the Directions class could be not 
 Just remove one direction in one navigation graph and recreate it. Android Studio can then re-index directions properly.
 
 If you want to test this app with successful payments, notice than the correct PIN is 753159.
+
+Last thing: this app use free-plan heroku backend, so first time you run it the loading of cards could be longer.

@@ -18,3 +18,5 @@ Last thing: this app uses free-plan heroku backend, so first time you run it the
 ### NOTICE
 
 When your payment is successful, transaction is added in the card page.
+
+The login page is fake, you can type every non-empty login / password.
